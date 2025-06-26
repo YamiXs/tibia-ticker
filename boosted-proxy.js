@@ -1,7 +1,7 @@
 (async function(){
   const result = { creature: null, boss: null };
   try {
-    const proxy = 'https://corsproxy.io/?';
+    const proxy = 'https://api.allorigins.win/raw?url=';
     const url = proxy + encodeURIComponent('https://www.tibia.com/news/?subtopic=creaturelibrary');
     const res = await fetch(url);
     const html = await res.text();
